@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins] bg-no-repeat bg-cover h-screen w-screen"
+  style="background-image: url('pexels-photo-1640772.jpeg');">
+
+    <header class="bg-orange-400">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-69 cursor-pointer p-3 h-24" src="logo-no-background.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[25vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="recipes.html">Recipes</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+    <div class="flex md:m-auto py-10 pt-44 mx-10 my-10 justify-center align-middle">
+        <div class="container bg-gray-100 bg-opacity-50">
+            <h1 class="text-8xl text-opacity-100 text-center">"Unleash Your Inner Chef with Our Deliciously Easy Recipes!"</h1>
+        </div>
+    </div>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+</html>

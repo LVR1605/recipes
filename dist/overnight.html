@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </head>
+    <body class="font-[Poppins] bg-gray-300">
+        <header class="bg-orange-400">
+            <nav class="flex justify-between items-center w-[92%]  mx-auto">
+                <div>
+                    <img class="w-69 cursor-pointer p-3 h-24" src="logo-no-background.png" alt="...">
+                </div>
+                <div
+                    class="nav-links duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[25vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li>
+                            <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="recipes.html">Recipes</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-2xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+        </header>
+
+        <div id="menu" >
+            <div class="m-0 p-0 box-border">
+                <div id="menu" >
+                    <h1 class="font-serif text-2xl p-3 text-center" >Recipes</h1>
+                    <div class="m-0 p-0 box-border">
+                        <div class="flex justify-center align-middle min-h-full">
+                            <img class="w-[35%] h-[35%] p-5 m-5 rounded-3xl" src="./1673620984Ham20and20Cheese20on20Croissant20Breakfast20Bake-ff8929ed6016423c9fb022b7b73344e5.png" alt="">
+                            <div class="md:m-auto md:w-auto">
+                                <div>
+                                    <h2 class="text-5xl">INGREDIENTS</h2>
+                                    <ul>
+                                        <li>butter-flavored cooking spray</li>
+                                        <li>2 large croissants</li>
+                                        <li>½ cup shredded Gruyere cheese</li>
+                                        <li>1 cup diced cooked ham</li>
+                                        <li>6 large eggs</li>
+                                        <li>¾ cup milk</li>
+                                        <li>½ cup sour cream</li>
+                                        <li>¼ teaspoon salt</li>
+                                        <li>¼ teaspoon freshly ground black pepper</li>
+                                        <li>1 tablespoon Dijon mustard</li>
+                                        <li>2 tablespoons chopped green onions (Optional)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 m-5">
+                            <h1 class="text-5xl">DIRECTIONS</h1>
+                            <ul class="p-3">
+                                <li>
+                                    <h1 class="text-2xl">Step 1</h1>
+                                        <p>Spray an 8x8-inch baking pan with cooking spray.</p>
+                                    </li>
+                                    <li>
+                                    <h1 class="text-2xl">Step 2</h1>
+                                        <p>Cut croissants into 1 inch cubes (about 4 cups, loosely packed) and spread out on the bottom of the prepared pan. Sprinkle evenly with cheese and ham.</p>
+                                    </li>
+                                    <h1 class="text-2xl">Step 3</h1>
+                                        <p>Combine eggs, milk, sour cream, Dijon mustard, salt, and pepper in a bowl. Beat the mixture until well blended using a wire whisk or an egg beater.</p>
+                                    </li>
+                                    <h1 class="text-2xl">Step 4</h1>
+                                        <p>Pour egg mixture evenly over the top of the croissants, cheese, and ham.</p>
+                                    </li>
+                                    <h1 class="text-2xl">Step 5</h1>
+                                        <p>Cover tightly with aluminum foil and place in the refrigerator for 8 hours.</p>
+                                    </li>
+                                    <h1 class="text-2xl">Step 6</h1>
+                                        <p>When ready to bake, set the dish out of the refrigerator on the counter, Preheat the oven to 350 degrees F (175 degrees C).</p>
+                                    </li>
+                                    <h1 class="text-2xl">Step 7</h1>
+                                        <p>Uncover casserole, place in the center of the preheated oven, and bake until the casserole is set, and a knife inserted into the middle of the casserole comes out clean, 45 to 55 minutes.</p>
+                                    </li>
+                                    <h1 class="text-2xl">Step 8</h1>
+                                        <p>Cut into serving pieces and garnish with chopped green onions.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </head>
+    <body class="bg-gray-200">
+        <header class="bg-orange-400">
+            <nav class="flex justify-between items-center w-[92%]  mx-auto">
+                <div>
+                    <img class="w-69 cursor-pointer p-3 h-24" src="logo-no-background.png" alt="...">
+                </div>
+                <div
+                    class="nav-links duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[25vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li>
+                            <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="recipes.html">Recipes</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+        </header>
+        <div id="menu" >
+            <h1 class="font-serif text-2xl p-3 text-center" >Recipes</h1>
+            <div class="m-0 p-0 box-border">
+                <div class="flex justify-center align-middle min-h-full">
+                    <img class="w-[35%] h-[35%] p-5 m-5 rounded-3xl" src="./11688-CajunSeafoodPasta-mfs-3X4-0990_preview_scale_100_ppi_300_quality_100-72bb747141bf4557a15c9ec79ecb34fb (1).png" alt="">
+                    <div id="text-box"
+                    class="md:m-auto md:w-auto">
+                        <div class="px-10">
+                            <h1 class="text-3xl">Cajun Seafood Pasta</h1>
+                            <h2 class="text-xl">DESCRIPTION</h2>
+                            <p>This Cajun-inspired seafood pasta recipe is a hot one, but delicious! If you don't like as much spice, divide the amounts of pepper in half. Better to add more later than spoil your creation. Bay scallops are preferred, but the larger sea scallops can be used if they are cut in half. This dish can also be placed in a casserole dish and placed under the broiler until the top turns golden brown.</p>
+                        </div>
+                        <div class="items-center py-3 px-10">
+                            <button class="bg-white p-2 rounded hover:bg-black duration-500 hover:text-white duration-500">
+                                <a href="cajun.html">VIEW RECIPE</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center align-middle min-h-full">
+                    <img class="w-[35%] h-[35%] p-5 m-5 rounded-3xl" src="./Mint_Chicken_010-2000-4ca7a46e70264a799ae9862d78515098.png" alt="">
+                    <div id="text-box"
+                    class="md:m-auto md:w-auto">
+                        <div class="px-10">
+                            <h1 class="text-3xl">Mint Chicken</h1>
+                            <h2 class="text-xl">DESCRIPTION</h2>
+                            <p>A favorite family recipe that my Mom has made for hundreds of guests. Fresh lemon juice and mint leaves are a must! Serve over hot cooked white rice.</p>
+                        </div>
+                        <div class="items-center py-3 px-10">
+                            <button class="bg-white p-2 rounded hover:bg-black duration-500 hover:text-white duration-500">
+                                <a href="mint.html">VIEW RECIPE</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center align-middle min-h-full">
+                    <img class="w-[35%] h-[35%] p-5 m-5 rounded-3xl" src="./1104151-552577daf8404b8b9b7e124dd41c160a.png" alt="">
+                    <div id="text-box"
+                    class="md:m-auto md:w-auto">
+                        <div class="px-10">
+                            <h1 class="text-3xl">Chef John's Pasta Primavera</h1>
+                            <h2 class="text-xl">DESCRIPTION</h2>
+                            <p>Pasta primavera is quite a straightforward recipe; spaghetti or fettuccine tossed with an array of fresh spring vegetables. When done right, this is one of the year's great seasonal recipes. This looks, smells, and tastes like a cool, sunny spring day.</p>
+                        </div>
+                        <div class="items-center py-3 px-10">
+                            <button class="bg-white p-2 rounded hover:bg-black duration-500 hover:text-white duration-500">
+                                <a href="primevera.html">VIEW RECIPE</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center align-middle min-h-full">
+                    <img class="w-[35%] h-[35%] p-5 m-5 rounded-3xl" src="./1673620984Ham20and20Cheese20on20Croissant20Breakfast20Bake-ff8929ed6016423c9fb022b7b73344e5.png" alt="">
+                    <div id="text-box"
+                    class="md:m-auto md:w-auto">
+                        <div class="px-10">
+                            <h1 class="text-3xl">Overnight Breakfast Bake with Ham, Cheese, and Croissants</h1>
+                            <h2 class="text-xl">DESCRIPTION</h2>
+                            <p>This overnight breakfast casserole is just the right size for smaller families. We love this with cherry tomatoes, but it is equally nice with fruit. You could also call this a savory bread pudding and serve it for lunch, with a salad. If you love mustard, double the Dijon amount in the recipe.</p>
+                        </div>
+                        <div class="items-center py-3 px-10">
+                            <button class="bg-white p-2 rounded hover:bg-black duration-500 hover:text-white duration-500">
+                                <a href="overnight.html">VIEW RECIPE</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center align-middle min-h-full">
+                    <img class="w-[35%] h-[35%] p-5 m-5 rounded-3xl" src="9215371-The-Best-Vegetarian-Chili-in-The-World-NatashaForestBrown-1x1-1-1290da8f7186491aa02b32a8ba57306d.png" alt="">
+                    <div id="text-box"
+                    class="md:m-auto md:w-auto">
+                        <div class="px-10">
+                            <h1 class="text-3xl">The Best Vegetarian Chili in the World</h1>
+                            <h2 class="text-xl">DESCRIPTION</h2>
+                            <p>This spicy vegetarian chili is ready in no time and packed with vegetables, beans, and flavor! Break out your soup pot and fix up a batch of this delicious chili — it tastes even better the next day.</p>
+                        </div>
+                        <div class="items-center py-3 px-10">
+                            <button class="bg-white p-2 rounded hover:bg-black duration-500 hover:text-white duration-500">
+                                <a href="chilli.html">VIEW RECIPE</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+    </body>
+</html>

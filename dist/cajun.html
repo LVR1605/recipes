@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins] bg-gray-300">
+
+    <header class="bg-orange-400">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-69 cursor-pointer p-3 h-24" src="logo-no-background.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[25vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 hover:bg-black rounded p-2 duration-500 hover:text-white duration-500" href="recipes.html">Recipes</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-2xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <div id="menu" >
+        <h1 class="font-serif text-2xl p-3 text-center" >Recipes</h1>
+        <div class="m-0 p-0 box-border">
+            <div class="flex justify-center align-middle min-h-full">
+                <img class="w-[35%] h-[35%] p-5 m-5 rounded-2xl" src="./11688-CajunSeafoodPasta-mfs-3X4-0990_preview_scale_100_ppi_300_quality_100-72bb747141bf4557a15c9ec79ecb34fb (1).png" alt="">
+                <div class="md:m-auto md:w-auto">
+                    <div>
+                        <h2 class="text-5xl">INGREDIENTS</h2>
+                        <ul>
+                            <li>1 pound dry fettuccine pasta</li>
+                            <li>2 cups heavy whipping cream</li>
+                            <li>1 cup chopped green onions</li>
+                            <li>1 cup chopped parsley</li>
+                            <li>1 tablespoon chopped fresh basil</li>
+                            <li>1 tablespoon chopped fresh thyme</li>
+                            <li>2 teaspoons salt</li>
+                            <li>2 teaspoons ground black pepper</li>
+                            <li>1 ½ teaspoons crushed red pepper flakes</li>
+                            <li>1 teaspoon ground white pepper</li>
+                            <li>½ pound shrimp, peeled and deveined</li>
+                            <li>½ pound scallops</li>
+                            <li>½ cup shredded Swiss cheese</li>
+                            <li>½ cup grated Parmesan cheese</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 m-5">
+                <h1 class="text-5xl">DIRECTIONS</h1>
+                <ul class="p-3">
+                    <li>
+                        <h1 class="text-2xl">Step 1</h1>
+                        <p>Fill a large pot with lightly salted water and bring to a rolling boil. Cook fettuccine at a boil until tender yet firm to the bite, about 8 minutes. Drain once done cooking.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl">Step 2</h1>
+                        <p>Meanwhile, pour cream into a large skillet. Cook over medium heat, stirring constantly, until just about boiling. Reduce heat and add green onions, parsley, basil, thyme, salt, black pepper, red pepper flakes, and white pepper. Simmer until thickened, 7 to 8 minutes.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl">Step 3</h1>
+                        <p>Stir in shrimp and scallops. Cook until shrimp is no longer translucent.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl">Step 4</h1>
+                        <p>Stir in cheeses, blending well.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl">Step 5</h1>
+                        <p>Serve sauce over pasta</p>
+                    </li>
+                </ul>
+            </div>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+</html>
